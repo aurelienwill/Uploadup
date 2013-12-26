@@ -23,22 +23,21 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.PerplexTheme1 = New Uploadup.PerplexTheme()
         Me.PerplexGroupBox2 = New Uploadup.PerplexGroupBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.PerplexButton2 = New Uploadup.PerplexButton()
+        Me.PerplexButton1 = New Uploadup.PerplexButton()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.PerplexLabel1 = New Uploadup.PerplexLabel()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.PerplexControlBox1 = New Uploadup.PerplexControlBox()
         Me.PerplexGroupBox1 = New Uploadup.PerplexGroupBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PerplexProgressBar1 = New Uploadup.PerplexProgressBar()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.PerplexLabel1 = New Uploadup.PerplexLabel()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.PerplexTheme1.SuspendLayout()
         Me.PerplexGroupBox2.SuspendLayout()
         Me.PerplexGroupBox1.SuspendLayout()
@@ -65,57 +64,70 @@ Partial Class Form1
         'PerplexGroupBox2
         '
         Me.PerplexGroupBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PerplexGroupBox2.Controls.Add(Me.PerplexLabel1)
-        Me.PerplexGroupBox2.Controls.Add(Me.Button1)
-        Me.PerplexGroupBox2.Controls.Add(Me.TextBox4)
-        Me.PerplexGroupBox2.Controls.Add(Me.TextBox3)
-        Me.PerplexGroupBox2.Controls.Add(Me.TextBox2)
+        Me.PerplexGroupBox2.Controls.Add(Me.PerplexButton2)
+        Me.PerplexGroupBox2.Controls.Add(Me.PerplexButton1)
         Me.PerplexGroupBox2.Controls.Add(Me.TextBox1)
+        Me.PerplexGroupBox2.Controls.Add(Me.PerplexLabel1)
+        Me.PerplexGroupBox2.Controls.Add(Me.TextBox4)
         Me.PerplexGroupBox2.Location = New System.Drawing.Point(29, 155)
         Me.PerplexGroupBox2.Name = "PerplexGroupBox2"
         Me.PerplexGroupBox2.Size = New System.Drawing.Size(227, 98)
         Me.PerplexGroupBox2.TabIndex = 10
         Me.PerplexGroupBox2.Text = "                          Config"
         '
+        'PerplexButton2
+        '
+        Me.PerplexButton2.BackColor = System.Drawing.Color.Transparent
+        Me.PerplexButton2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer))
+        Me.PerplexButton2.Location = New System.Drawing.Point(125, 63)
+        Me.PerplexButton2.Name = "PerplexButton2"
+        Me.PerplexButton2.Size = New System.Drawing.Size(89, 26)
+        Me.PerplexButton2.TabIndex = 8
+        Me.PerplexButton2.Text = "Browser"
+        '
+        'PerplexButton1
+        '
+        Me.PerplexButton1.BackColor = System.Drawing.Color.Transparent
+        Me.PerplexButton1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer))
+        Me.PerplexButton1.Location = New System.Drawing.Point(125, 31)
+        Me.PerplexButton1.Name = "PerplexButton1"
+        Me.PerplexButton1.Size = New System.Drawing.Size(89, 26)
+        Me.PerplexButton1.TabIndex = 3
+        Me.PerplexButton1.Text = "Uploader"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(18, 69)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(76, 20)
+        Me.TextBox1.TabIndex = 6
+        Me.TextBox1.Text = "Fichier"
+        '
+        'PerplexLabel1
+        '
+        Me.PerplexLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.PerplexLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer))
+        Me.PerplexLabel1.Location = New System.Drawing.Point(18, 56)
+        Me.PerplexLabel1.Name = "PerplexLabel1"
+        Me.PerplexLabel1.Size = New System.Drawing.Size(76, 13)
+        Me.PerplexLabel1.TabIndex = 5
+        Me.PerplexLabel1.Text = "Ex :/www/"
+        '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(141, 55)
+        Me.TextBox4.Location = New System.Drawing.Point(18, 33)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(76, 20)
         Me.TextBox4.TabIndex = 3
         Me.TextBox4.Text = "RépertoireFTP"
         '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(141, 33)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(76, 20)
-        Me.TextBox3.TabIndex = 2
-        Me.TextBox3.Text = "Motdepasse"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(19, 56)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(76, 20)
-        Me.TextBox2.TabIndex = 1
-        Me.TextBox2.Text = "User"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(18, 33)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(76, 20)
-        Me.TextBox1.TabIndex = 0
-        Me.TextBox1.Text = "Hôte"
-        '
         'PerplexControlBox1
         '
         Me.PerplexControlBox1.BackColor = System.Drawing.Color.Transparent
         Me.PerplexControlBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.PerplexControlBox1.Location = New System.Drawing.Point(221, 3)
+        Me.PerplexControlBox1.Location = New System.Drawing.Point(233, 3)
         Me.PerplexControlBox1.Name = "PerplexControlBox1"
-        Me.PerplexControlBox1.Size = New System.Drawing.Size(51, 25)
+        Me.PerplexControlBox1.Size = New System.Drawing.Size(51, 24)
         Me.PerplexControlBox1.TabIndex = 9
         Me.PerplexControlBox1.Text = "PerplexControlBox1"
         '
@@ -129,7 +141,7 @@ Partial Class Form1
         Me.PerplexGroupBox1.Name = "PerplexGroupBox1"
         Me.PerplexGroupBox1.Size = New System.Drawing.Size(227, 90)
         Me.PerplexGroupBox1.TabIndex = 5
-        Me.PerplexGroupBox1.Text = "                         Derniers fichier uploader"
+        Me.PerplexGroupBox1.Text = "                         Dernier fichier uploadé"
         '
         'Label2
         '
@@ -171,25 +183,6 @@ Partial Class Form1
         Me.PerplexProgressBar1.Text = "PerplexProgressBar1"
         Me.PerplexProgressBar1.Value = 0
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(99, 33)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(36, 51)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Valider"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'PerplexLabel1
-        '
-        Me.PerplexLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.PerplexLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.PerplexLabel1.Location = New System.Drawing.Point(141, 79)
-        Me.PerplexLabel1.Name = "PerplexLabel1"
-        Me.PerplexLabel1.Size = New System.Drawing.Size(76, 13)
-        Me.PerplexLabel1.TabIndex = 5
-        Me.PerplexLabel1.Text = "Ex :/www/"
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -209,7 +202,6 @@ Partial Class Form1
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
     Friend WithEvents PerplexTheme1 As Uploadup.PerplexTheme
     Friend WithEvents PerplexProgressBar1 As Uploadup.PerplexProgressBar
@@ -220,10 +212,10 @@ Partial Class Form1
     Friend WithEvents PerplexControlBox1 As Uploadup.PerplexControlBox
     Friend WithEvents PerplexGroupBox2 As Uploadup.PerplexGroupBox
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents PerplexLabel1 As Uploadup.PerplexLabel
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents PerplexButton2 As Uploadup.PerplexButton
+    Friend WithEvents PerplexButton1 As Uploadup.PerplexButton
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
 
 End Class
