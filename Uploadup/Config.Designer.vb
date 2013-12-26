@@ -25,18 +25,16 @@ Partial Class config
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.PerplexTheme1 = New Uploadup.PerplexTheme()
-        Me.PerplexButton1 = New Uploadup.PerplexButton()
         Me.PerplexGroupBox2 = New Uploadup.PerplexGroupBox()
         Me.PerplexLabel1 = New Uploadup.PerplexLabel()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.PerplexLabel2 = New Uploadup.PerplexLabel()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.PerplexLabel3 = New Uploadup.PerplexLabel()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.PerplexLabel2 = New Uploadup.PerplexLabel()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.PerplexButton1 = New Uploadup.PerplexButton()
+        Me.PerplexControlBox1 = New Uploadup.PerplexControlBox()
         Me.PerplexTheme1.SuspendLayout()
         Me.PerplexGroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -71,30 +69,10 @@ Partial Class config
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Hote"
         '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(74, 92)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(76, 20)
-        Me.TextBox3.TabIndex = 2
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(125, 49)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(76, 20)
-        Me.TextBox2.TabIndex = 1
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(20, 49)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(76, 20)
-        Me.TextBox1.TabIndex = 0
-        '
         'PerplexTheme1
         '
         Me.PerplexTheme1.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.PerplexTheme1.Controls.Add(Me.PerplexControlBox1)
         Me.PerplexTheme1.Controls.Add(Me.PerplexGroupBox2)
         Me.PerplexTheme1.Controls.Add(Me.PerplexButton1)
         Me.PerplexTheme1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -104,26 +82,16 @@ Partial Class config
         Me.PerplexTheme1.TabIndex = 0
         Me.PerplexTheme1.Text = "Configuration"
         '
-        'PerplexButton1
-        '
-        Me.PerplexButton1.BackColor = System.Drawing.Color.Transparent
-        Me.PerplexButton1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.PerplexButton1.Location = New System.Drawing.Point(102, 198)
-        Me.PerplexButton1.Name = "PerplexButton1"
-        Me.PerplexButton1.Size = New System.Drawing.Size(91, 43)
-        Me.PerplexButton1.TabIndex = 0
-        Me.PerplexButton1.Text = "Valider"
-        '
         'PerplexGroupBox2
         '
         Me.PerplexGroupBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PerplexGroupBox2.Controls.Add(Me.TextBox6)
-        Me.PerplexGroupBox2.Controls.Add(Me.PerplexLabel3)
-        Me.PerplexGroupBox2.Controls.Add(Me.TextBox5)
-        Me.PerplexGroupBox2.Controls.Add(Me.PerplexLabel2)
-        Me.PerplexGroupBox2.Controls.Add(Me.TextBox4)
         Me.PerplexGroupBox2.Controls.Add(Me.PerplexLabel1)
-        Me.PerplexGroupBox2.Location = New System.Drawing.Point(23, 43)
+        Me.PerplexGroupBox2.Controls.Add(Me.TextBox3)
+        Me.PerplexGroupBox2.Controls.Add(Me.PerplexLabel3)
+        Me.PerplexGroupBox2.Controls.Add(Me.TextBox2)
+        Me.PerplexGroupBox2.Controls.Add(Me.PerplexLabel2)
+        Me.PerplexGroupBox2.Controls.Add(Me.TextBox1)
+        Me.PerplexGroupBox2.Location = New System.Drawing.Point(24, 48)
         Me.PerplexGroupBox2.Name = "PerplexGroupBox2"
         Me.PerplexGroupBox2.Size = New System.Drawing.Size(243, 134)
         Me.PerplexGroupBox2.TabIndex = 11
@@ -133,25 +101,35 @@ Partial Class config
         '
         Me.PerplexLabel1.BackColor = System.Drawing.Color.Transparent
         Me.PerplexLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.PerplexLabel1.Location = New System.Drawing.Point(33, 30)
+        Me.PerplexLabel1.Location = New System.Drawing.Point(35, 30)
         Me.PerplexLabel1.Name = "PerplexLabel1"
-        Me.PerplexLabel1.Size = New System.Drawing.Size(76, 13)
-        Me.PerplexLabel1.TabIndex = 5
-        Me.PerplexLabel1.Text = "Hote"
+        Me.PerplexLabel1.Size = New System.Drawing.Size(90, 13)
+        Me.PerplexLabel1.TabIndex = 11
+        Me.PerplexLabel1.Text = "Host"
         '
-        'TextBox4
+        'TextBox3
         '
-        Me.TextBox4.Location = New System.Drawing.Point(13, 43)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(81, 20)
-        Me.TextBox4.TabIndex = 6
+        Me.TextBox3.Location = New System.Drawing.Point(79, 92)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(81, 20)
+        Me.TextBox3.TabIndex = 10
         '
-        'TextBox5
+        'PerplexLabel3
         '
-        Me.TextBox5.Location = New System.Drawing.Point(149, 43)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(81, 20)
-        Me.TextBox5.TabIndex = 8
+        Me.PerplexLabel3.BackColor = System.Drawing.Color.Transparent
+        Me.PerplexLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer))
+        Me.PerplexLabel3.Location = New System.Drawing.Point(85, 79)
+        Me.PerplexLabel3.Name = "PerplexLabel3"
+        Me.PerplexLabel3.Size = New System.Drawing.Size(76, 13)
+        Me.PerplexLabel3.TabIndex = 9
+        Me.PerplexLabel3.Text = "Utilisateur"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(149, 43)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(81, 20)
+        Me.TextBox2.TabIndex = 8
         '
         'PerplexLabel2
         '
@@ -163,22 +141,32 @@ Partial Class config
         Me.PerplexLabel2.TabIndex = 7
         Me.PerplexLabel2.Text = "Mot de passe"
         '
-        'TextBox6
+        'TextBox1
         '
-        Me.TextBox6.Location = New System.Drawing.Point(79, 92)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(81, 20)
-        Me.TextBox6.TabIndex = 10
+        Me.TextBox1.Location = New System.Drawing.Point(13, 43)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(81, 20)
+        Me.TextBox1.TabIndex = 6
         '
-        'PerplexLabel3
+        'PerplexButton1
         '
-        Me.PerplexLabel3.BackColor = System.Drawing.Color.Transparent
-        Me.PerplexLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.PerplexLabel3.Location = New System.Drawing.Point(85, 79)
-        Me.PerplexLabel3.Name = "PerplexLabel3"
-        Me.PerplexLabel3.Size = New System.Drawing.Size(76, 13)
-        Me.PerplexLabel3.TabIndex = 9
-        Me.PerplexLabel3.Text = "Utilisateur"
+        Me.PerplexButton1.BackColor = System.Drawing.Color.Transparent
+        Me.PerplexButton1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer))
+        Me.PerplexButton1.Location = New System.Drawing.Point(102, 198)
+        Me.PerplexButton1.Name = "PerplexButton1"
+        Me.PerplexButton1.Size = New System.Drawing.Size(91, 43)
+        Me.PerplexButton1.TabIndex = 0
+        Me.PerplexButton1.Text = "Valider"
+        '
+        'PerplexControlBox1
+        '
+        Me.PerplexControlBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PerplexControlBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer))
+        Me.PerplexControlBox1.Location = New System.Drawing.Point(238, 3)
+        Me.PerplexControlBox1.Name = "PerplexControlBox1"
+        Me.PerplexControlBox1.Size = New System.Drawing.Size(51, 24)
+        Me.PerplexControlBox1.TabIndex = 12
+        Me.PerplexControlBox1.Text = "PerplexControlBox1"
         '
         'config
         '
@@ -197,18 +185,16 @@ Partial Class config
 
     End Sub
     Friend WithEvents PerplexTheme1 As Uploadup.PerplexTheme
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents PerplexButton1 As Uploadup.PerplexButton
     Friend WithEvents PerplexGroupBox2 As Uploadup.PerplexGroupBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents PerplexLabel1 As Uploadup.PerplexLabel
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents PerplexLabel2 As Uploadup.PerplexLabel
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents PerplexLabel3 As Uploadup.PerplexLabel
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents PerplexLabel2 As Uploadup.PerplexLabel
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents PerplexLabel1 As Uploadup.PerplexLabel
+    Friend WithEvents PerplexControlBox1 As Uploadup.PerplexControlBox
 End Class

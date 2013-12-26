@@ -6,7 +6,7 @@ Public Class Form1
     Dim filename As String
     Dim extension As String
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        lectconfig.LoadConfig()
+
         Me.CenterToScreen()
         Me.AllowDrop = True
         Label1.Text = String.Empty
@@ -14,6 +14,8 @@ Public Class Form1
         If Not File.Exists("Uploadup.config") Then
             config.Show()
             config.TopMost = True
+        Else
+            lectconfig.LoadConfig()
         End If
     End Sub
     Sub UpdateProgressBar(ByVal sender As Object, ByVal e As UploadProgressChangedEventArgs)
@@ -31,7 +33,6 @@ Public Class Form1
             Dim hote As String = lectconfig.GetItem("HOTE")
             Dim repertftp As String = TextBox4.Text
             .Credentials = New NetworkCredential(user, mdp)
-            MsgBox(filename)
             .UploadFileAsync(New Uri("ftp://" & hote & repertftp & filename), pathup)
         End With
 
